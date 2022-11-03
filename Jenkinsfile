@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone sources') {
             steps {
-                sh 'git clone 'https://github.com/ranveer17/C-_Jenkins.git''
+                checkout scm
             }
         }
 
