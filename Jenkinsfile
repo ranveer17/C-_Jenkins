@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone sources') {
             steps {
-                git url: 'https://github.com/ranveer17/sonarqube-jacoco-code-coverage.git'
+                git url: 'https://github.com/ranveer17/C-_Jenkins.git'
             }
         }
 
