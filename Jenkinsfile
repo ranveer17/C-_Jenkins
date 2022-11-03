@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Email Notification'){
             steps{
-                'mail bcc: '', body: ' repo is working', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ranveersingh7600454082@gmail.com'
+                mail bcc: '', body: ' repo is working', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ranveersingh7600454082@gmail.com'
             }
         }
         
