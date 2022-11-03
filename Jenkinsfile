@@ -18,7 +18,7 @@ pipeline {
         stage('Testing') {
             steps {
                 sh'make test_unit'
-                sh'./test_unit'
+                sh'./test_unit -v'
 
                }
         }
