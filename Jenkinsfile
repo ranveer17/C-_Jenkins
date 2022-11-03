@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     stages {
-//         stage('Clone sources') {
-//             steps {
-//                 git url: 'https://github.com/ranveer17/C-_Jenkins.git'
-//             }
-//         }
+        stage('Clone sources') {
+            steps {
+                sh 'git clone 'https://github.com/ranveer17/sonarqube-jacoco-code-coverage.git''
+            }
+        }
 
         stage('Build Stage') {
             steps {
