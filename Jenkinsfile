@@ -22,6 +22,11 @@ pipeline {
 
                }
         }
+        stage('Email Notification'){
+            steps{
+                sh'mail bcc: '', body: 'The Jenkins Pipeline for the private repo is working', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ranveersingh7600454082@gmail.com''
+            }
+        }
         
 
     }
