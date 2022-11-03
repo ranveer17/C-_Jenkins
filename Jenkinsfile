@@ -22,6 +22,12 @@ pipeline {
 
                }
         }
+        stage('static analysis'){
+            steps{
+                sh '''make 
+cppcheck --enable=all --inconclusive --xml --xml-version=2 graphal 2>cppcheck.xml'''
+            }
+        }
         stage('Email Notification'){
             steps{
                 mail bcc: '', body: ' repo is working', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ranveersingh7600454082@gmail.com'
