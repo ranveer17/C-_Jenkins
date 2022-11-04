@@ -6,7 +6,7 @@ void test_add(void){
 }
 
 void test_mun(void){
-    TEST_CHECK_(mun(10,10)==100,"mun(%d,%d)==%d",4,7,(28));
+    TEST_CHECK_(mun(10,10)==100,"mun(%d,%d)==%d",4,8,(32));
 }
 
 
